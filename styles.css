@@ -11,8 +11,10 @@ body {
   }
   
   .navigation {
-    /* flex-grow: 1; */
+    padding: 0;
+    margin: 0;
     background: rgb(42, 42, 42);
+    height: 100px;
   }
   
   .main {
@@ -23,6 +25,7 @@ body {
   .footer {
     flex-grow: 1;
     background: rgb(42, 42, 42);
+    height: 125px;
   }
   
   nav {
@@ -33,9 +36,11 @@ body {
   nav li{
     list-style: none;
     display: inline;
-    padding: 1em;
+    padding: 0;
     margin: 1em;
     color: white;
+    font-size: large;
+    font-weight: bold;
   }
 
   .navigation h3 {
@@ -54,13 +59,64 @@ body {
       margin-left: 5em;
       margin-right: 10em;
   }
- /* @media(min-width: 600px) {
-    .container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
 
-  .navigation, .main, .footer {
-    margin: 1em;
+  button {
+    color: white;
+    background: rgb(56, 54, 54);
+    border: solid rgb(192, 190, 190) .5px ;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  } */
+
+  .button {
+    position: relative;
+    bottom: 50px;
+    left: 360px;
+  }
+
+  .navigation h3 {
+    position: relative;
+    top: 75px;
+    left: 20px;
+    font-size: x-large;
+  }
+
+  .navigation nav {
+    position: relative;
+    top: -80px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left{
+    text-align: left;
+    position: relative;
+    left: 40px;
+    top: 20px;
+  }
+
+  .address {
+    text-align: right;
+    position: relative;
+    right: 100px;
+    top: -50px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact {
+    text-align: right;
+    position: relative;
+    right: 350px;
+    top: -125px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer h5 {
+    color: grey;
+  }
